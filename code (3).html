@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurfauziah Tour & Travel - Sahabat Ibadah Haji dan Umrah Anda</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        body {
+            font-family: 'Amiri', serif;
+            background-color: #ffffff;
+            color: #004d00;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1564936281409-0b76a1d60f92');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 77, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: #ffffff;
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 20px #FFD700;
+            transition: all 0.3s ease;
+        }
+        .package-card:hover {
+            transform: translateY(-10px);
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+        .whatsapp-float:hover {
+            background: #128C7E;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-green-800">Nurfauziah Tour & Travel</div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#about" class="text-green-800 hover:text-gold-500">Tentang Kami</a></li>
+                <li><a href="#packages" class="text-green-800 hover:text-gold-500">Paket</a></li>
+                <li><a href="#gallery" class="text-green-800 hover:text-gold-500">Galeri</a></li>
+                <li><a href="#testimonials" class="text-green-800 hover:text-gold-500">Testimoni</a></li>
+                <li><a href="#contact" class="text-green-800 hover:text-gold-500">Kontak</a></li>
+            </ul>
+            <div class="md:hidden">
+                <button class="text-green-800">Menu</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg">
+        <div class="hero-content" data-aos="fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Nurfauziah Tour & Travel</h1>
+            <p class="text-xl md:text-2xl mb-8">Sahabat Ibadah Haji dan Umrah Anda</p>
+            <p class="text-lg mb-8">Perjalanan Suci dengan Kenyamanan, Keamanan, dan Bimbingan Terbaik.</p>
+            <div class="space-x-4">
+                <a href="#packages" class="bg-gold-500 text-white px-6 py-3 rounded-lg btn-glow">Lihat Paket Umrah</a>
+                <a href="#contact" class="bg-green-800 text-white px-6 py-3 rounded-lg btn-glow">Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800" data-aos="fade-up">Tentang Kami</h2>
+            <p class="text-center mb-8" data-aos="fade-up" data-aos-delay="200">Nurfauziah Tour & Travel adalah perusahaan penyedia layanan Haji dan Umrah terpercaya di Indonesia sejak 2010. Kami berkomitmen untuk memberikan pengalaman ibadah yang aman, nyaman, dan bermakna dengan bimbingan ahli dan fasilitas terbaik.</p>
+            <div class="flex justify-center space-x-8 mb-8" data-aos="fade-up" data-aos-delay="400">
+                <img src="https://via.placeholder.com/150x100?text=Sertifikasi+Kemenag" alt="Sertifikasi Kemenag" class="rounded">
+                <img src="https://via.placeholder.com/150x100?text=Testimoni+1" alt="Testimoni" class="rounded">
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800" data-aos="fade-up">Paket Umrah & Haji</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg package-card" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1584466977773-cd1b84adf98f" alt="Hotel" class="w-full h-40 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Umrah Regular (9 Hari)</h3>
+                    <p class="mb-2">Mulai Rp 28.000.000</p>
+                    <ul class="mb-4">
+                        <li>Tiket PP, Visa, Hotel Bintang 4</li>
+                        <li>Makan 3x, Mutawif, City Tour</li>
+                    </ul>
+                    <a href="#" class="bg-green-800 text-white px-4 py-2 rounded btn-glow">Pesan Sekarang</a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg package-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92" alt="Pesawat" class="w-full h-40 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Umrah Plus Turki (12 Hari)</h3>
+                    <p class="mb-2">Mulai Rp 35.000.000</p>
+                    <ul class="mb-4">
+                        <li>Tiket PP, Visa, Hotel Bintang 5</li>
+                        <li>Makan 3x, Mutawif, City Tour Turki</li>
+                    </ul>
+                    <a href="#" class="bg-green-800 text-white px-4 py-2 rounded btn-glow">Pesan Sekarang</a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg package-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1603621742164-6c9df1b7f6d9" alt="Masjid Nabawi" class="w-full h-40 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Haji Furoda (25 Hari)</h3>
+                    <p class="mb-2">Mulai Rp 180.000.000</p>
+                    <ul class="mb-4">
+                        <li>Tiket PP, Visa, Hotel Bintang 5</li>
+                        <li>Makan 3x, Mutawif, City Tour</li>
+                    </ul>
+                    <a href="#" class="bg-green-800 text-white px-4 py-2 rounded btn-glow">Pesan Sekarang</a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg package-card" data-aos="fade-up" data-aos-delay="600">
+                    <img src="https://images.unsplash.com/photo-1598435075784-4a8d3a5f1b9f" alt="Masjidil Haram" class="w-full h-40 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Haji Khusus (30 Hari)</h3>
+                    <p class="mb-2">Mulai Rp 120.000.000</p>
+                    <ul class="mb-4">
+                        <li>Tiket PP, Visa, Hotel Bintang 4</li>
+                        <li>Makan 3x, Mutawif, City Tour</li>
+                    </ul>
+                    <a href="#" class="bg-green-800 text-white px-4 py-2 rounded btn-glow">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800" data-aos="fade-up">Galeri Visual</h2>
+            <div class="grid md:grid-cols-3 gap-4">
+                <img src="https://images.unsplash.com/photo-1598531868932-bc28c418b6ef" alt="Jamaah" class="w-full h-40 object-cover rounded hover:scale-105 transition-transform" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1603621741513-1cf2fca6b21a" alt="Ibadah" class="w-full h-40 object-cover rounded hover:scale-105 transition-transform" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1584697964403-5e89b51b4b16" alt="Keberangkatan" class="w-full h-40 object-cover rounded hover:scale-105 transition-transform" data-aos="zoom-in" data-aos-delay="400">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800" data-aos="fade-up">Testimoni Jamaah</h2>
+            <div class="carousel">
+                <div class="flex justify-center">
+                    <div class="w-full md:w-1/2" data-aos="fade-left">
+                        <img src="https://via.placeholder.com/100x100?text=Jamaah+1" alt="Jamaah" class="rounded-full mx-auto mb-4">
+                        <p class="text-center italic">"Pengalaman ibadah yang luar biasa dengan bimbingan terbaik."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800" data-aos="fade-up">Kontak & Lokasi</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <form class="bg-white p-6 rounded-lg shadow" data-aos="fade-right">
+                    <input type="text" placeholder="Nama" class="w-full mb-4 p-2 border rounded">
+                    <input type="email" placeholder="Email" class="w-full mb-4 p-2 border rounded">
+                    <textarea placeholder="Pesan" class="w-full mb-4 p-2 border rounded"></textarea>
+                    <button class="bg-green-800 text-white px-4 py-2 rounded">Kirim</button>
+                </form>
+                <div data-aos="fade-left">
+                    <p class="mb-4">Ikuti Kami:</p>
+                    <a href="#" class="text-green-800 mr-4">WhatsApp</a>
+                    <a href="#" class="text-green-800 mr-4">Instagram</a>
+                    <a href="#" class="text-green-800 mr-4">TikTok</a>
+                    <a href="#" class="text-green-800">YouTube</a>
+                    <div class="mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.816666!3d-6.208763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1630000000000!5m2!1sen!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 Nurfauziah Tour & Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+    </a>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
